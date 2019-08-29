@@ -13,4 +13,8 @@ private ImageView img00,img01,img02;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
+    private void handleChange(){
+        
+    }
 }
