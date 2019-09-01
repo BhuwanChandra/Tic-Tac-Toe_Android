@@ -39,16 +39,16 @@ int player = 1;
         }
     }
 
-    public void reset(){
-        img00.setImageResource(R.drawable.oimg);
-        img01.setImageResource(R.drawable.oimg);
-        img02.setImageResource(R.drawable.oimg);
-        img10.setImageResource(R.drawable.oimg);
-        img11.setImageResource(R.drawable.oimg);
-        img12.setImageResource(R.drawable.oimg);
-        img20.setImageResource(R.drawable.oimg);
-        img21.setImageResource(R.drawable.oimg);
-        img22.setImageResource(R.drawable.oimg);
+    public void reset(View view){
+        img00.setImageResource(0);
+        img01.setImageResource(0);
+        img02.setImageResource(0);
+        img10.setImageResource(0);
+        img11.setImageResource(0);
+        img12.setImageResource(0);
+        img20.setImageResource(0);
+        img21.setImageResource(0);
+        img22.setImageResource(0);
     }
 
 }

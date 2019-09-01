@@ -132,24 +132,41 @@
 
     <Button
         android:id="@+id/player1"
-        android:layout_width="0dp"
+        android:layout_width="205dp"
         android:layout_height="wrap_content"
+        android:background="@color/colorBoard"
         android:text="Player 1 : X"
-        android:textSize="18sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/img01"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/player2"
+        android:id="@+id/reset"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Player 2 : O"
-        android:textSize="18sp"
+        android:background="@color/colorBoard"
+        android:onClick="reset"
+        android:text="RESET Game"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img21" />
+
+    <Button
+        android:id="@+id/player2"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBoard"
+        android:text="Player 2 : O"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/img02"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintStart_toEndOf="@+id/player1"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
