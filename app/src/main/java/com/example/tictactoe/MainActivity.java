@@ -1,5 +1,6 @@
 package com.example.tictactoe;
 
+import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 
 
@@ -28,13 +29,26 @@ int player = 1;
 
     public void handleChange(View view){
         ImageView img = (ImageView) view;
-        if(player == 1){
-            img.setImageResource(R.drawable.ximg);
-            player = 2;
-        }else if(player == 2){
+        Drawable db = img.getDrawable();
+        if((player == 1)&&(db == null)){
+                img.setImageResource(R.drawable.ximg);
+                player = 2;
+        }else if((player == 2)&&(db == null)){
             img.setImageResource(R.drawable.oimg);
             player = 1;
         }
+    }
+
+    public void reset(){
+        img00.setImageResource(R.drawable.oimg);
+        img01.setImageResource(R.drawable.oimg);
+        img02.setImageResource(R.drawable.oimg);
+        img10.setImageResource(R.drawable.oimg);
+        img11.setImageResource(R.drawable.oimg);
+        img12.setImageResource(R.drawable.oimg);
+        img20.setImageResource(R.drawable.oimg);
+        img21.setImageResource(R.drawable.oimg);
+        img22.setImageResource(R.drawable.oimg);
     }
 
 }
