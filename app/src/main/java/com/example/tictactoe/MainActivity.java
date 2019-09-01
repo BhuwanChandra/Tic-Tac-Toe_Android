@@ -39,6 +39,10 @@ int player = 1;
         }
     }
 
+    public void ifWon(){
+
+    }
+
     public void reset(View view){
         img00.setImageResource(0);
         img01.setImageResource(0);
@@ -49,6 +53,7 @@ int player = 1;
         img20.setImageResource(0);
         img21.setImageResource(0);
         img22.setImageResource(0);
+        player = 1;
     }
 
 }
