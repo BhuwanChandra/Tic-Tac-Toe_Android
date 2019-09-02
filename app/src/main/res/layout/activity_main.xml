@@ -35,7 +35,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-         />
+        app:srcCompat="@drawable/blank" />
 
     <ImageView
         android:id="@+id/img10"
@@ -48,7 +48,7 @@
         app:layout_constraintEnd_toStartOf="@+id/img11"
         app:layout_constraintHorizontal_bias="0.923"
         app:layout_constraintStart_toStartOf="@+id/imageView"
-         />
+        app:srcCompat="@drawable/blank" />
 
     <ImageView
         android:id="@+id/img20"
@@ -62,7 +62,7 @@
         app:layout_constraintEnd_toStartOf="@+id/img21"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-         />
+        app:srcCompat="@drawable/blank" />
 
     <ImageView
         android:id="@+id/img01"
@@ -74,7 +74,7 @@
         app:layout_constraintEnd_toStartOf="@+id/img02"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-         />
+        app:srcCompat="@drawable/blank" />
 
     <ImageView
         android:id="@+id/img11"
@@ -84,7 +84,7 @@
         android:onClick="handleChange"
         app:layout_constraintBottom_toTopOf="@+id/img20"
         app:layout_constraintEnd_toStartOf="@+id/img12"
-         />
+        app:srcCompat="@drawable/blank" />
 
     <ImageView
         android:id="@+id/img21"
@@ -94,7 +94,7 @@
         android:onClick="handleChange"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/img22"
-         />
+        app:srcCompat="@drawable/blank" />
 
     <ImageView
         android:id="@+id/img02"
@@ -107,7 +107,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-         />
+        app:srcCompat="@drawable/blank" />
 
     <ImageView
         android:id="@+id/img12"
@@ -117,7 +117,7 @@
         android:onClick="handleChange"
         app:layout_constraintBottom_toTopOf="@+id/img20"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
-         />
+        app:srcCompat="@drawable/blank" />
 
     <ImageView
         android:id="@+id/img22"
@@ -128,7 +128,7 @@
         android:onClick="handleChange"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:srcCompat="@drawable/blank" />
 
     <Button
         android:id="@+id/player1"
@@ -168,5 +168,17 @@
         app:layout_constraintHorizontal_bias="0.434"
         app:layout_constraintStart_toEndOf="@+id/player1"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- <ImageView
+        android:id="@+id/imageRef"
+        android:layout_width="8dp"
+        android:layout_height="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reset"
+        app:layout_constraintVertical_bias="0.833"
+        app:srcCompat="@drawable/blank" /> -->
 
 </android.support.constraint.ConstraintLayout>
