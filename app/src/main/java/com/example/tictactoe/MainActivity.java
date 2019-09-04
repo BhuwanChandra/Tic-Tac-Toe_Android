@@ -48,7 +48,8 @@ int player = 1;
         ifWon();
     }
 
-    public void won(ImageView img){
+    public void won(View view){
+        ImageView img = (ImageView) view;
         final Bitmap map = ((BitmapDrawable)img.getDrawable()).getBitmap();
         Drawable xii = getResources().getDrawable(R.drawable.ximg);
         Drawable ohm = getResources().getDrawable(R.drawable.ximg);
