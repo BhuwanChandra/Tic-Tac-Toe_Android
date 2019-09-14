@@ -41,11 +41,12 @@ int player = 1;
             if(map.sameAs(myLogo)&&(player == 1)){
                 img.setImageResource(R.drawable.ximg);
                 player = 2;
+                ifWon();
         }else if(map.sameAs(myLogo)&&(player == 2)){
             img.setImageResource(R.drawable.oimg);
             player = 1;
+            ifWon();
         }
-        ifWon();
     }
 
     public void won(View view){
@@ -58,42 +59,54 @@ int player = 1;
         if (map.sameAs(xmyLogo)) {
             Toast.makeText(this," Player 1 WON ",Toast.LENGTH_SHORT).show();
             player = 0;
-        } else if (map.sameAs(omyLogo)) {
+        }
+        if (map.sameAs(omyLogo)) {
             Toast.makeText(this," Player 2 WON ",Toast.LENGTH_SHORT).show();
             player = 0;
         }
     }
 
     public void ifWon(){
-        if(img00.getDrawable().equals(img01.getDrawable())&&img00.getDrawable().equals(img02.getDrawable()))
+
+        final Bitmap image00 = ((BitmapDrawable) img00.getDrawable()).getBitmap();
+        final Bitmap image01 = ((BitmapDrawable) img01.getDrawable()).getBitmap();
+        final Bitmap image02 = ((BitmapDrawable) img02.getDrawable()).getBitmap();
+        final Bitmap image10 = ((BitmapDrawable) img10.getDrawable()).getBitmap();
+        final Bitmap image11 = ((BitmapDrawable) img11.getDrawable()).getBitmap();
+        final Bitmap image12 = ((BitmapDrawable) img12.getDrawable()).getBitmap();
+        final Bitmap image20 = ((BitmapDrawable) img20.getDrawable()).getBitmap();
+        final Bitmap image21 = ((BitmapDrawable) img21.getDrawable()).getBitmap();
+        final Bitmap image22 = ((BitmapDrawable) img22.getDrawable()).getBitmap();
+
+        if(image00.sameAs(image01)&&image00.sameAs(image02))
         {
             won(img00);
         }
-        if(img00.getDrawable().equals(img10.getDrawable())&&img00.getDrawable().equals(img20.getDrawable()))
+        if(image00.sameAs(image10)&&image00.sameAs(image20))
         {
             won(img00);
         }
-        if(img00.getDrawable().equals(img11.getDrawable())&&img00.getDrawable().equals(img22.getDrawable()))
+        if(image00.sameAs(image11)&&image00.sameAs(image22))
         {
             won(img00);
         }
-        if(img11.getDrawable().equals(img01.getDrawable())&&img11.getDrawable().equals(img21.getDrawable()))
+        if(image11.sameAs(image01)&&image11.sameAs(image21))
         {
             won(img01);
         }
-        if(img02.getDrawable().equals(img12.getDrawable())&&img22.getDrawable().equals(img02.getDrawable()))
+        if(image02.sameAs(image12)&&image22.sameAs(image02))
         {
             won(img02);
         }
-        if(img10.getDrawable().equals(img11.getDrawable())&&img10.getDrawable().equals(img12.getDrawable()))
+        if(image10.sameAs(image11)&&image10.sameAs(image12))
         {
             won(img10);
         }
-        if(img20.getDrawable().equals(img21.getDrawable())&&img20.getDrawable().equals(img22.getDrawable()))
+        if(image20.sameAs(image21)&&image20.sameAs(image22))
         {
             won(img20);
         }
-        if(img02.getDrawable().equals(img11.getDrawable())&&img20.getDrawable().equals(img02.getDrawable()))
+        if(image02.sameAs(image11)&&image20.sameAs(image02))
         {
             won(img20);
         }
